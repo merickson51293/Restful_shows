@@ -9,13 +9,14 @@
 </head>
 <body>
     <h1>All Shows</h1>
+    <div id="table">
     <table>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Network</th>
-            <th>Release Date</th>
-            <th>Actions</th>
+        <tr">
+            <th id="top_line">ID</th>
+            <th id="top_line">Title</th>
+            <th id="top_line">Network</th>
+            <th id="top_line">Release Date</th>
+            <th id="top_line">Actions</th>
         </tr>
         {% for show in shows %}
         <tr>
@@ -31,6 +32,7 @@
         </tr>
         {% endfor %}
     </table>
+    </div>
     <a href="/new_show">Add a New Show</a>
 </body>
 </html>
