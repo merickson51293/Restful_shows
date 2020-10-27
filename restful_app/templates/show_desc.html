@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Description</title>
+    {% load static %}
+</head>
+<body>
+    <h1>TV Show #{{show.id}}</h1>
+    <a href="/">Go Back</a>
+    <h4>Title: {{show.title}}</h4>
+    <h4>Network: {{show.network}}</h4>
+    <h4>Release Date: {{show.release_date}}</h4>
+    <h4>Description: {{show.desc}}</h4>
+</body>
+</html>

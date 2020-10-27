@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit {{show.title}}</title>
+</head>
+<body>
+    <h1>Edit {{show.id}}</h1>
+    <form action="/edit_show" method="post"></form>
+    <h4>Title</h4><input type="text" name="title" id="update">
+    <h4>Network</h4><input type="text" name="network" id="update">
+    <h4>Release Date</h4><input type="datetime" name="release_date" id="update">
+    <h4>Description</h4><input type="text" name="description" id="update">
+    <input type="submit" value="Update">
+</body>
+</html>
