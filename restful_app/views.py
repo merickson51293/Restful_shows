@@ -18,6 +18,10 @@ def show_desc(request, show_id):
     return render(request, "show_desc.html", context)
 
 def new_show(request):
+    if len(errors) > 0:
+        for key, value in errors.items():
+            messages.error(request, value)
+        return redirect()
     if request.method=='POST':
         new_show = Show.objects.create(
         title=request.POST['title'],
