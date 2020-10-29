@@ -10,7 +10,14 @@
 <body>
     <h1>Add a New Show</h1>
     <a href="/">Go Back</a>
-    <form action="/new_show" method="POST">
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <form action="new_show" method="POST">
         {% csrf_token %}
         <h4>Title</h4><input type="text" name="title" id="new_show">
         <h4>Network</h4><input type="text" name="network" id="new_show">
